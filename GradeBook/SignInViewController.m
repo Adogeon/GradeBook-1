@@ -12,7 +12,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "CJSONDeserializer.h"
 #import "Teacher.h"
-
+#import "Student.h"
 
 
 
@@ -223,7 +223,7 @@
         
         // Pass any objects to the view controller here, like...
         NSDictionary *dictTwo = [rows objectAtIndex: 0];
-        teacher = [[Teacher alloc] initWithId:[dictTwo objectForKey:@"tid"]firstName:(NSString *)[dictTwo objectForKey:@"tfname"] lastName:(NSString *)[dictTwo objectForKey:@"tlname"] email:(NSString *)[dictTwo objectForKey:@"temail"] userName:(NSString *)[dictTwo objectForKey:@"tuname"] password:(NSString *)[dictTwo objectForKey:@"tpassw"] officeLocation:(NSString *)[dictTwo objectForKey:@"location"] officeHours:(NSString *)[dictTwo objectForKey:@"hours"]];
+        teacher = [[Teacher alloc] initWithId:[dictTwo objectForKey:@"tid"]firstName:(NSString *)[dictTwo objectForKey:@"tfname"] lastName:(NSString *)[dictTwo objectForKey:@"tlname"] email:[dictTwo objectForKey:@"temail"] userName:[dictTwo objectForKey:@"tuname"] password:(NSString *)[dictTwo objectForKey:@"tpassw"] officeLocation:(NSString *)[dictTwo objectForKey:@"location"] officeHours:(NSString *)[dictTwo objectForKey:@"hours"]];
        /* teacher.tid = [dictTwo objectForKey:@"tid"];
         teacher.tfname = [dictTwo objectForKey:@"tfname"];
         teacher.tlname = [dictTwo objectForKey:@"tlname"];
@@ -240,6 +240,11 @@
         
         // Get reference to the destination view controller
         SHomeViewController *shomevc = [segue destinationViewController];
+        NSDictionary *dictTwo = [rows objectAtIndex: 0];
+        student = [[Student alloc] initWithId:[dictTwo objectForKey:@"sid"] firstName:[dictTwo objectForKey:@"sfname"] lastName:[dictTwo objectForKey:@"slname"] email:[dictTwo objectForKey:@"semail"] userName:[dictTwo objectForKey:@"suname"] password:[dictTwo objectForKey:@"spassw"]];
+        NSLog(@"Student id from signin =%@", student.sid);
+        [shomevc setStudent:student];
+        
         
         // Pass any objects to the view controller here, like...
         //[shomevc setMyObjectHere:object];

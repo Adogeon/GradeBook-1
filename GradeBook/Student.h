@@ -16,6 +16,7 @@
 @property (strong,nonatomic) NSString *suname;
 @property (strong,nonatomic) NSString *spassw;
 
--(id)initWithId:(NSString *)sid firstName:(NSString *)sfname lastName:(NSString *)slname email:(NSString *)semail userName:(NSString *)suname password:(NSString *)spassw officeLocation:(NSString *)office officeHours:(NSString *)hours;
+-(id)initWithId:(NSString *)sid firstName:(NSString *)sfname lastName:(NSString *)slname email:(NSString *)semail userName:(NSString *)suname password:(NSString *)spassw;
+-(id)initNull;
 
 @end

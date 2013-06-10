@@ -930,7 +930,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhl-gD-Fb9">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="164" id="z50-be-lNr"/>
+                                    <constraint firstAttribute="width" constant="164" id="2P7-D8-Aae"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Save Changes">
@@ -962,9 +962,6 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Username's Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vK-Mf-9bS">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="244" id="MPF-sC-yP1"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -993,6 +990,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rz1-N8-53Y">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="ooS-4M-l0s"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Delete Account">
                                     <color key="titleColor" red="0.0" green="0.67978200600000005" blue="0.67826990929999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -1005,25 +1005,25 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94175277219999998" green="0.94175277219999998" blue="0.94055569559999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="1vK-Mf-9bS" firstAttribute="top" secondItem="Yx9-uL-pqd" secondAttribute="top" constant="105" id="909-4O-1Q8"/>
-                            <constraint firstItem="zhl-gD-Fb9" firstAttribute="centerX" secondItem="1vK-Mf-9bS" secondAttribute="centerX" type="default" id="J5k-9l-0lO"/>
-                            <constraint firstItem="HKL-oP-cuP" firstAttribute="top" secondItem="Yx9-uL-pqd" secondAttribute="top" constant="207" id="JEe-xu-psx"/>
-                            <constraint firstItem="suc-OE-ayc" firstAttribute="top" secondItem="Yx9-uL-pqd" secondAttribute="top" constant="142" id="LAD-ch-59E"/>
-                            <constraint firstItem="RiH-lo-IgO" firstAttribute="top" secondItem="HKL-oP-cuP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="NAF-5o-BNB"/>
-                            <constraint firstItem="O5U-MU-rZC" firstAttribute="top" secondItem="suc-OE-ayc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="O42-Mo-YSI"/>
+                            <constraint firstAttribute="bottom" secondItem="Rz1-N8-53Y" secondAttribute="bottom" constant="39" id="5ku-rn-KwT"/>
+                            <constraint firstItem="zhl-gD-Fb9" firstAttribute="centerX" secondItem="RiH-lo-IgO" secondAttribute="centerX" type="default" id="DdU-2G-M6r"/>
+                            <constraint firstItem="HKL-oP-cuP" firstAttribute="top" secondItem="Yx9-uL-pqd" secondAttribute="top" constant="183" id="GVZ-IM-Kht"/>
+                            <constraint firstItem="Rz1-N8-53Y" firstAttribute="centerX" secondItem="Yx9-uL-pqd" secondAttribute="centerX" type="default" id="GXO-tE-VGe"/>
+                            <constraint firstItem="suc-OE-ayc" firstAttribute="top" secondItem="Yx9-uL-pqd" secondAttribute="top" constant="117" id="M0Q-U6-dam"/>
+                            <constraint firstItem="O5U-MU-rZC" firstAttribute="top" secondItem="suc-OE-ayc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="MDS-gS-l9o"/>
+                            <constraint firstAttribute="bottom" secondItem="RiH-lo-IgO" secondAttribute="bottom" constant="159" id="NeU-Y9-MI5"/>
                             <constraint firstItem="HKL-oP-cuP" firstAttribute="leading" secondItem="O5U-MU-rZC" secondAttribute="leading" type="default" id="Rdd-8t-j6F"/>
-                            <constraint firstItem="Rz1-N8-53Y" firstAttribute="leading" secondItem="zhl-gD-Fb9" secondAttribute="leading" type="default" id="RlF-Iy-td6"/>
                             <constraint firstItem="rNv-wK-PeC" firstAttribute="leading" secondItem="Yx9-uL-pqd" secondAttribute="leading" constant="15" id="U6g-fa-pnc"/>
-                            <constraint firstItem="zhl-gD-Fb9" firstAttribute="trailing" secondItem="Rz1-N8-53Y" secondAttribute="trailing" type="default" id="Uqj-o2-fmB"/>
-                            <constraint firstAttribute="bottom" secondItem="zhl-gD-Fb9" secondAttribute="bottom" constant="161" id="VMo-NN-vCG"/>
+                            <constraint firstAttribute="bottom" secondItem="zhl-gD-Fb9" secondAttribute="bottom" constant="98" id="W0m-OF-i5s"/>
                             <constraint firstItem="rNv-wK-PeC" firstAttribute="top" secondItem="Yx9-uL-pqd" secondAttribute="top" constant="11" id="Ze8-fH-u1T"/>
+                            <constraint firstItem="1vK-Mf-9bS" firstAttribute="top" secondItem="Yx9-uL-pqd" secondAttribute="top" constant="77" id="bwj-CJ-d4d"/>
                             <constraint firstItem="HKL-oP-cuP" firstAttribute="leading" secondItem="RiH-lo-IgO" secondAttribute="leading" type="default" id="fRG-2U-9ir"/>
                             <constraint firstItem="O5U-MU-rZC" firstAttribute="leading" secondItem="suc-OE-ayc" secondAttribute="leading" type="default" id="fSW-UR-Vei"/>
-                            <constraint firstAttribute="bottom" secondItem="Rz1-N8-53Y" secondAttribute="bottom" constant="85" id="hKI-5f-0so"/>
+                            <constraint firstItem="RiH-lo-IgO" firstAttribute="leading" secondItem="Yx9-uL-pqd" secondAttribute="leading" constant="38" id="hZh-4U-GEb"/>
                             <constraint firstItem="RiH-lo-IgO" firstAttribute="trailing" secondItem="HKL-oP-cuP" secondAttribute="trailing" type="default" id="kU8-CV-tkU"/>
                             <constraint firstItem="suc-OE-ayc" firstAttribute="leading" secondItem="1vK-Mf-9bS" secondAttribute="leading" type="default" id="ssA-Pg-E7K"/>
+                            <constraint firstItem="1vK-Mf-9bS" firstAttribute="centerX" secondItem="Rz1-N8-53Y" secondAttribute="centerX" type="default" id="u3R-qe-Mzc"/>
                             <constraint firstItem="suc-OE-ayc" firstAttribute="trailing" secondItem="O5U-MU-rZC" secondAttribute="trailing" type="default" id="vTA-hF-KUL"/>
-                            <constraint firstItem="zhl-gD-Fb9" firstAttribute="centerX" secondItem="Yx9-uL-pqd" secondAttribute="centerX" type="default" id="zeD-53-DeS"/>
                         </constraints>
                         <connections>
                             <action selector="backgroundTapHideKeyboard:" destination="9g5-JP-dsJ" eventType="touchDown" id="KnB-RO-alg"/>
@@ -1033,6 +1033,8 @@
                     <connections>
                         <outlet property="cancelButton" destination="rNv-wK-PeC" id="QrQ-SW-bfn"/>
                         <outlet property="emailTextField" destination="HKL-oP-cuP" id="RdO-dU-jCV"/>
+                        <outlet property="fnameField" destination="suc-OE-ayc" id="wJ7-VN-Ewf"/>
+                        <outlet property="lnameField" destination="O5U-MU-rZC" id="37w-Ix-NSL"/>
                         <outlet property="passwTextField" destination="RiH-lo-IgO" id="FZ3-XY-SWD"/>
                     </connections>
                 </viewController>
@@ -1749,8 +1751,8 @@
                 <relationship kind="action" name="doneButton:"/>
                 <relationship kind="outlet" name="cancelButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="fnameTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="lnameTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="fnameField" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lnameField" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="passwTextField" candidateClass="UITextField"/>
             </relationships>
         </class>
@@ -1802,7 +1804,6 @@
             <relationships>
                 <relationship kind="action" name="backgroundTapHideKeyboard:"/>
                 <relationship kind="action" name="helpButton:"/>
-                <relationship kind="action" name="returnToSignInActionForSegue:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="action" name="signinButton:"/>
                 <relationship kind="outlet" name="passwTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="signinButton" candidateClass="UIButton"/>
@@ -1828,7 +1829,6 @@
                 <relationship kind="action" name="newassignmentButton:"/>
                 <relationship kind="action" name="newtypeButton:"/>
                 <relationship kind="action" name="reportsButton:"/>
-                <relationship kind="action" name="returnToTCourseActionForSegue:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="outlet" name="assignmentTable" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="coursenameLabel" candidateClass="UILabel"/>
             </relationships>
@@ -1840,7 +1840,6 @@
                 <relationship kind="action" name="helpButton:"/>
                 <relationship kind="action" name="newcourseButton:"/>
                 <relationship kind="action" name="returnActionForSegue:" candidateClass="UIStoryboardSegue"/>
-                <relationship kind="action" name="returnToTHomeActionForSegue:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="action" name="signoutButton:"/>
                 <relationship kind="outlet" name="courseTable" candidateClass="UITableView"/>
             </relationships>

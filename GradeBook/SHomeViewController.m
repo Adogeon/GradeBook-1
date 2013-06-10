@@ -8,13 +8,16 @@
 
 #import "SHomeViewController.h"
 #import "CJSONDeserializer.h"
+#import "Student.h"
+#import "Teacher.h"
+#import "EditViewController.h"
 
 @interface SHomeViewController ()
 
 @end
 
 @implementation SHomeViewController
-@synthesize courseTable, listData, dataArray, rows, studentID;
+@synthesize courseTable, listData, dataArray, rows, studentID,student;
 NSIndexPath *deleteIndexPath;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -34,7 +37,7 @@ NSIndexPath *deleteIndexPath;
    
     NSLog(@"Student id = %@",studentID);
     
-    NSString *post =[NSString stringWithFormat:@"sid=%@",studentID];
+    NSString *post =[NSString stringWithFormat:@"sid=%@",student.sid];
     
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     
@@ -152,6 +155,7 @@ NSIndexPath *deleteIndexPath;
 }
 
 - (IBAction)editButton:(id)sender {
+     [self performSegueWithIdentifier:@"SHomeToEdit" sender:sender];
 }
 
 - (IBAction)signoutBurron:(id)sender {
@@ -283,6 +287,18 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 	
 	
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if ([[segue identifier] isEqualToString:@"SHomeToEdit"]) {
+        EditViewController *seditvc = [segue destinationViewController];
+        [seditvc setTeacher: [[Teacher alloc] initNull]];
+        [seditvc setStudent: student];
+    }
+    
+}
+
 
 
 @end
